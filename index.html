@@ -481,7 +481,7 @@
   --editor-collaborator-5: var(--yellow-500);
   --editor-collaborator-6: var(--gray-500);
   --opacity-disabled: 0.4;
-  --opacity-icon-secondary: 0.4;
+  --opacity-icon-secondary: 0.3;
   --z-modal: 40;
   --z-coachmark: 35;
   --z-popover: 50;
@@ -507,8 +507,6 @@
   --border-git-closed: color-mix(in srgb, var(--text-git-closed) 40%, transparent);
   --border-git-conflicting: color-mix(in srgb, var(--text-git-conflicting) 40%, transparent);
   --border-git-draft: color-mix(in srgb, var(--text-git-draft) 40%, transparent);
-  --border-git-opened: var(--border-git-added);
-  --border-git-queued: var(--border-git-modified);
   --border-strong: var(--alpha-3);
   --border-stronger: hsl(from var(--neutral-900) h s l / 40%);
   --shadow-sm: 0 1px 2px 0 hsl(from var(--gray-900) h s l / 6%), 0 2px 8px 0 var(--shadow-color);
@@ -577,23 +575,8 @@
   --surface-panel: var(--surface-2);
   --page-bg: var(--surface-0);
   --fill-git-added: #1a8633;
-  --fill-git-added-hover: #1e9b3b;
   --fill-git-removed: var(--text-git-removed);
-  --fill-git-removed-hover: #de295f;
   --fill-git-modified: #8b751c;
-  --fill-git-modified-hover: #a08720;
-  --fill-git-merged: #855fd6;
-  --fill-git-merged-hover: #9473db;
-  --fill-git-closed: #ed0b00;
-  --fill-git-closed-hover: #ff1307;
-  --fill-git-conflicting: #b85b19;
-  --fill-git-conflicting-hover: #c5621b;
-  --fill-git-draft: var(--text-git-draft);
-  --fill-git-draft-hover: #808080;
-  --fill-git-opened: var(--fill-git-added);
-  --fill-git-opened-hover: var(--fill-git-added-hover);
-  --fill-git-queued: var(--fill-git-modified);
-  --fill-git-queued-hover: var(--fill-git-modified-hover);
   --fill-primary: var(--neutral-900);
   --fill-primary-hover: var(--neutral-750);
   --fill-secondary: hsl(0 0% 100% / 0.1);
@@ -635,8 +618,6 @@
   --bg-git-closed: color-mix(in srgb, var(--text-git-closed) 20%, transparent);
   --bg-git-conflicting: color-mix(in srgb, var(--text-git-conflicting) 20%, transparent);
   --bg-git-draft: color-mix(in srgb, var(--text-git-draft) 20%, transparent);
-  --bg-git-opened: var(--bg-git-added);
-  --bg-git-queued: var(--bg-git-modified);
   --bg-editor-canvas: var(--neutral-60);
   --bg-neutral: var(--alpha-1);
   --bg-neutral-hover: var(--alpha-2);
@@ -662,22 +643,11 @@
   --text-git-closed: #ff3a30;
   --text-git-conflicting: #c5621b;
   --text-git-draft: #737373;
-  --text-git-opened: var(--text-git-added);
-  --text-git-queued: var(--text-git-modified);
   --text-primary: var(--neutral-900);
   --text-secondary: var(--neutral-600);
   --text-muted: var(--neutral-400);
   --text-disabled: var(--alpha-4);
   --on-primary: var(--neutral-0);
-  --on-git-added: var(--gray-0);
-  --on-git-removed: var(--gray-0);
-  --on-git-modified: var(--gray-0);
-  --on-git-merged: var(--gray-0);
-  --on-git-closed: var(--gray-0);
-  --on-git-conflicting: var(--gray-0);
-  --on-git-draft: var(--gray-0);
-  --on-git-opened: var(--on-git-added);
-  --on-git-queued: var(--on-git-modified);
   --chart-categorical-1: var(--blue-450);
   --chart-categorical-2: var(--orange-350);
   --chart-categorical-3: var(--aqua-350);
@@ -770,17 +740,7 @@
     --surface-2: var(--gray-830);
     --surface-3: var(--gray-800);
     --fill-git-added: var(--text-git-added);
-    --fill-git-added-hover: #27c840;
-    --fill-git-removed-hover: #ff1342;
     --fill-git-modified: var(--text-git-modified);
-    --fill-git-modified-hover: #fac800;
-    --fill-git-merged: var(--text-git-merged);
-    --fill-git-merged-hover: #a67dff;
-    --fill-git-closed: var(--text-git-closed);
-    --fill-git-closed-hover: #ff4940;
-    --fill-git-conflicting: var(--text-git-conflicting);
-    --fill-git-conflicting-hover: #f97a1f;
-    --fill-git-draft-hover: #999999;
     --fill-primary-hover: var(--gray-100);
     --fill-secondary: var(--alpha-2);
     --fill-secondary-hover: hsl(from var(--neutral-900) h s l / 14%);
@@ -833,13 +793,6 @@
     --text-primary: var(--gray-50);
     --text-secondary: var(--gray-200);
     --text-muted: var(--gray-400);
-    --on-git-added: var(--gray-900);
-    --on-git-removed: var(--gray-900);
-    --on-git-modified: var(--gray-900);
-    --on-git-merged: var(--gray-900);
-    --on-git-closed: var(--gray-900);
-    --on-git-conflicting: var(--gray-900);
-    --on-git-draft: var(--gray-900);
     --chart-categorical-1: var(--blue-400);
     --chart-categorical-2: var(--orange-400);
     --chart-categorical-3: var(--aqua-400);
@@ -933,17 +886,7 @@
     --surface-2: var(--gray-830);
     --surface-3: var(--gray-800);
     --fill-git-added: var(--text-git-added);
-    --fill-git-added-hover: #27c840;
-    --fill-git-removed-hover: #ff1342;
     --fill-git-modified: var(--text-git-modified);
-    --fill-git-modified-hover: #fac800;
-    --fill-git-merged: var(--text-git-merged);
-    --fill-git-merged-hover: #a67dff;
-    --fill-git-closed: var(--text-git-closed);
-    --fill-git-closed-hover: #ff4940;
-    --fill-git-conflicting: var(--text-git-conflicting);
-    --fill-git-conflicting-hover: #f97a1f;
-    --fill-git-draft-hover: #999999;
     --fill-primary-hover: var(--gray-100);
     --fill-secondary: var(--alpha-2);
     --fill-secondary-hover: hsl(from var(--neutral-900) h s l / 14%);
@@ -996,13 +939,6 @@
     --text-primary: var(--gray-50);
     --text-secondary: var(--gray-200);
     --text-muted: var(--gray-400);
-    --on-git-added: var(--gray-900);
-    --on-git-removed: var(--gray-900);
-    --on-git-modified: var(--gray-900);
-    --on-git-merged: var(--gray-900);
-    --on-git-closed: var(--gray-900);
-    --on-git-conflicting: var(--gray-900);
-    --on-git-draft: var(--gray-900);
     --chart-categorical-1: var(--blue-400);
     --chart-categorical-2: var(--orange-400);
     --chart-categorical-3: var(--aqua-400);
@@ -1062,6 +998,49 @@
   color-scheme: light dark;
   --font-serif: "anthropic-serif", Georgia, "Times New Roman", serif;
 }
+:root,
+[data-mode="light"],
+[data-mode="dark"],
+[data-mode="system"] {
+  --fill-git-modified-hover: var(--fill-git-modified);
+  --fill-git-merged-hover: var(--fill-git-merged);
+  --fill-git-closed-hover: var(--fill-git-closed);
+  --fill-git-draft-hover: var(--fill-git-draft);
+  --fill-git-opened: var(--fill-git-added);
+  --fill-git-opened-hover: var(--fill-git-added-hover);
+  --fill-git-added-hover: var(--shell-when-light, #1e9b3b)
+    var(--shell-when-dark, #27c840);
+  --fill-git-removed-hover: var(--shell-when-light, #de295f)
+    var(--shell-when-dark, #ff1342);
+  --fill-git-merged: var(--shell-when-light, #855fd6)
+    var(--shell-when-dark, var(--text-git-merged));
+  --fill-git-closed: var(--shell-when-light, #ed0b00)
+    var(--shell-when-dark, var(--text-git-closed));
+  --fill-git-draft: var(--text-git-draft);
+  --on-git-added: var(--neutral-0);
+  --on-git-removed: var(--neutral-0);
+  --on-git-modified: var(--neutral-0);
+  --on-git-merged: var(--neutral-0);
+  --on-git-closed: var(--neutral-0);
+  --on-git-draft: var(--neutral-0);
+  --on-git-opened: var(--on-git-added);
+  --fill-git-conflicting: color-mix(
+    in srgb,
+    var(--text-git-conflicting) 93%,
+    black
+  );
+  --fill-git-conflicting-hover: var(--fill-git-conflicting);
+  --on-git-conflicting: var(--on-git-modified);
+  --fill-git-queued: var(--fill-git-modified);
+  --fill-git-queued-hover: var(--fill-git-modified);
+  --on-git-queued: var(--on-git-modified);
+  --bg-git-opened: var(--bg-git-added);
+  --border-git-opened: var(--border-git-added);
+  --text-git-opened: var(--text-git-added);
+  --bg-git-queued: var(--bg-git-modified);
+  --border-git-queued: var(--border-git-modified);
+  --text-git-queued: var(--text-git-modified);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1074,8 +1053,7 @@ button {
   font-family: inherit;
 }
 body {
-  font-family:
-    "anthropic-sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
   background: transparent;
 }
 html:where(:not([data-saved])),
@@ -1260,7 +1238,7 @@ form.elicit {
   border: 1px solid var(--border);
   border-radius: var(--radius-composer);
   box-shadow: 0 4px 20px color-mix(in srgb, var(--black) 3.5%, transparent);
-  margin: 4px 20px 24px;
+  margin: 4px 1px 24px 0;
   overflow: hidden;
   font-family: var(--font-sans);
   font-size: var(--font-text-sm-size, 14px);
@@ -1298,6 +1276,14 @@ form.elicit .elicit-header > svg {
 }
 form.elicit .elicit-header > span {
   flex: 1;
+}
+form.elicit > .elicit-went-ahead {
+  padding: 10px 16px;
+  border-bottom: 0.5px solid var(--border);
+  color: var(--text-secondary);
+}
+form.elicit.elicit-submitted > .elicit-went-ahead {
+  display: none;
 }
 form.elicit .elicit-body {
   padding: 0 16px;
@@ -1362,14 +1348,588 @@ form.elicit .elicit-pill[aria-pressed="true"] {
   background: var(--bg-accent-muted);
   color: var(--text-primary);
 }
+form.elicit .elicit-pill[hidden] {
+  display: none !important;
+}
+:root[data-no-design-system]
+  form.elicit:is(
+    [data-source="drifting-trinket-slides"],
+    [data-source="drifting-trinket-design"]
+  )
+  .elicit-pill:is([data-design-system], [data-value="Use my design system"]) {
+  display: none !important;
+}
+form.elicit .elicit-pill:not(.elicit-card) > .elicit-ds-bar {
+  display: inline-block;
+  width: 40px;
+  height: 12px;
+  margin-inline-end: 8px;
+  border-radius: 3px;
+  outline: 1px solid #8884;
+  outline-offset: -1px;
+  vertical-align: -1px;
+  background: linear-gradient(
+    90deg,
+    var(--g) 25%,
+    var(--m) 0 50%,
+    var(--c) 0 75%,
+    var(--a) 0
+  );
+}
 @media (pointer: coarse), (hover: none) {
   form.elicit .elicit-pill {
     min-height: 44px;
   }
 }
+form.elicit .elicit-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(clamp(110px, 50% - 4px, 124px), 1fr)
+  );
+}
+form.elicit .elicit-cards > .elicit-pill:not(.elicit-card) {
+  place-self: center start;
+}
+form.elicit .elicit-card {
+  display: grid;
+  align-content: start;
+  padding: 0 9px 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  text-align: start;
+}
+form.elicit .elicit-card > i {
+  --elicit-ink: var(--c, var(--text-muted));
+  --elicit-dot: var(--a, var(--text-muted));
+  display: block;
+  order: -1;
+  position: relative;
+  height: 54px;
+  margin: 0 -9px 6px;
+  border-bottom: 0.5px solid var(--border);
+  border-radius: 0;
+  box-shadow: none;
+  background:
+    radial-gradient(
+      circle at 16px 38px,
+      var(--elicit-dot) 3.6px,
+      transparent 4.1px
+    ),
+    radial-gradient(
+      circle at 29px 38px,
+      var(--elicit-dot) 3.6px,
+      transparent 4.1px
+    ),
+    linear-gradient(var(--elicit-dot) 0 0) 16px 34px / 13px 8px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--elicit-ink) 45%, transparent) 0 0)
+      12px 24px / 32px 3px no-repeat;
+  background-color: var(--g, var(--surface-1));
+  print-color-adjust: exact;
+  forced-color-adjust: none;
+}
+form.elicit .elicit-card > i::before,
+form.elicit .elicit-card > i::after {
+  content: "";
+  position: absolute;
+}
+form.elicit .elicit-card > i::before {
+  top: 13px;
+  left: 12px;
+  width: 44px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--elicit-ink);
+}
+form.elicit .elicit-card > i::after {
+  top: 10px;
+  right: 12px;
+  width: 39px;
+  height: 34px;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle,
+    var(--elicit-dot) 7.6px,
+    transparent 8.1px
+  );
+  background-color: var(
+    --m,
+    color-mix(in srgb, var(--text-muted) 30%, transparent)
+  );
+}
+@media (forced-colors: active) {
+  form.elicit .elicit-card[aria-pressed="true"] {
+    forced-color-adjust: none;
+    border-color: Highlight;
+    background: Highlight;
+    color: HighlightText;
+  }
+}
+:root[data-steps] form.elicit {
+  position: relative;
+}
+:root[data-steps] form.elicit:not(.elicit-submitted) .elicit-header {
+  display: none;
+}
+:root[data-steps] form.elicit:not(.elicit-submitted) .elicit-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 1fr;
+  min-height: var(--elicit-held, 0);
+  padding: 0;
+}
+:root[data-steps] .elicit-body > .elicit-group {
+  grid-area: 1 / 1;
+  align-content: start;
+  gap: 6px;
+  margin: 0;
+  padding: 12px 6px 6px;
+  border: 0;
+}
+:root[data-steps][data-resting] form.elicit,
+:root[data-steps] .elicit-pager > button:disabled {
+  pointer-events: none;
+}
+:root[data-steps] .elicit-pager > button:enabled:not(:last-child) {
+  pointer-events: auto;
+}
+:root[data-steps] .elicit-pager > button:enabled {
+  z-index: 1;
+}
+:root[data-steps] form.elicit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+:root[data-steps][data-resting] form.elicit::after {
+  pointer-events: auto;
+}
+:root[data-steps] .elicit-pills {
+  pointer-events: none;
+}
+:root[data-steps] .elicit-pill {
+  pointer-events: auto;
+}
+:root[data-steps] .elicit-body {
+  isolation: isolate;
+}
+:root[data-steps][data-resting] form.elicit {
+  -webkit-tap-highlight-color: transparent;
+}
+:root[data-steps][data-resting] body > div,
+:root[data-steps][data-resting] #vis-container ~ #larger-btns,
+:root[data-steps][data-resting] #vis-container ~ #not-sent {
+  -webkit-user-select: none;
+  user-select: none;
+}
+:root[data-steps][data-resting] :is(input, textarea) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+:root[data-steps] form.elicit:not([data-step]) .elicit-group ~ .elicit-group,
+:root[data-steps] form.elicit:not([data-step]) .elicit-submit,
+:root[data-steps] form.elicit[data-step] .elicit-group:not([data-step]),
+:root[data-steps] .elicit-submit[data-idle] {
+  visibility: hidden;
+}
+form.elicit #elicit-place[hidden] {
+  display: none !important;
+}
+:root[data-steps] .elicit-group,
+:root[data-steps] .elicit-group :not(.elicit-pill, .elicit-dropzone, .remove) {
+  transition-property: none !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-steps] .elicit-group[data-step="on"] {
+    animation: elicit-step 0.2s ease-out;
+  }
+  :root[data-steps] .elicit-group[data-step="back"] {
+    --elicit-from: -12px;
+    animation: elicit-step 0.2s ease-out;
+  }
+  :root[data-steps] .elicit-group[data-step="on"]:dir(rtl) {
+    --elicit-from: -12px;
+  }
+  :root[data-steps] .elicit-group[data-step="back"]:dir(rtl) {
+    --elicit-from: 12px;
+  }
+}
+@keyframes elicit-step {
+  from {
+    opacity: 0;
+    transform: translateX(var(--elicit-from, 12px));
+  }
+}
+:root[data-steps] .elicit-question {
+  min-height: 24px;
+  padding-inline: 10px;
+  line-height: 24px;
+}
+:root[data-steps] .elicit-pager ~ .elicit-body .elicit-question {
+  padding-inline-end: 140px;
+}
+:root[data-steps] .elicit-pager {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  inset-inline-end: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  scroll-margin-block: 12px;
+}
+form.elicit.elicit-submitted .elicit-pager {
+  display: none;
+}
+@media not all and (max-width: 420px) {
+  :root[data-steps] .elicit-went-ahead ~ .elicit-pager {
+    position: relative;
+    top: max(24px, 12px + var(--font-text-sm-size, 14px) * 5 / 7);
+    height: 0;
+    flex-direction: row;
+    padding-block: 0;
+    justify-content: flex-end;
+    scroll-margin-block: 24px;
+  }
+}
+:root[data-steps] .elicit-pager > button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+:root[data-steps] .elicit-pager > button::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: solid currentColor;
+  border-width: 0 0 1.5px 1.5px;
+  transform: translate(1.5px) rotate(45deg);
+}
+:root[data-steps] .elicit-pager > span + button::before {
+  transform: translate(-1.5px) rotate(-135deg);
+}
+:root[data-steps] .elicit-pager:dir(rtl) > button:first-child::before {
+  transform: translate(-1.5px) rotate(-135deg);
+}
+:root[data-steps] .elicit-pager:dir(rtl) > span + button::before {
+  transform: translate(1.5px) rotate(45deg);
+}
+:root[data-steps] .elicit-pager > button:last-child {
+  margin-inline-start: 6px;
+}
+:root[data-steps] .elicit-pager > button:last-child::before {
+  content: "\d7";
+  content: "\d7" / "";
+  width: auto;
+  height: auto;
+  border: 0;
+  font-size: 20px;
+  line-height: 1;
+  transform: none;
+}
+:root[data-steps] .elicit-tip {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 4px);
+  inset-inline-end: 0;
+  width: max-content;
+  max-width: 240px;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--fill-primary);
+  color: var(--on-primary);
+  font-size: var(--font-text-xs-size, 12px);
+  line-height: 16px;
+  cursor: default;
+}
+:root[data-steps] .elicit-tip::before {
+  content: "";
+  position: absolute;
+  inset: -5px 0 100%;
+}
+:root[data-steps]
+  .elicit-pager
+  > button:focus-visible:not([data-hushed])
+  > .elicit-tip {
+  display: block;
+}
+:root[data-steps] .elicit-pager > button:focus-visible {
+  outline: 2px solid var(--fill-accent);
+  outline-offset: -1px;
+}
+:root[data-steps] .elicit-pager > button:disabled,
+:root[data-steps] .elicit-pager > button[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: default;
+}
+:root[data-steps] .elicit-pills {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  border-radius: 12px;
+  counter-reset: elicit-row;
+  --elicit-rule: linear-gradient(var(--alpha-2) 0 0) top / calc(100% - 24px)
+    0.5px no-repeat;
+}
+:root[data-steps] .elicit-pills:focus-visible,
+:root[data-steps] .elicit-group:focus-visible,
+:root[data-steps] .elicit-pill:focus-visible {
+  outline: 1px solid var(--fill-accent);
+  outline-offset: -1px;
+}
+:root[data-steps] .elicit-skip:focus-visible,
+:root[data-steps] .elicit-submit:focus-visible {
+  outline: 2px solid var(--fill-accent);
+  outline-offset: 2px;
+}
+:root[data-steps] .elicit-pill {
+  position: relative;
+  display: flex !important;
+  flex-direction: row !important;
+  place-self: auto;
+  align-items: center !important;
+  gap: 10px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 44px;
+  padding: 6px 10px !important;
+  box-shadow: none !important;
+  overflow: visible;
+  border: 0;
+  border-radius: 12px;
+  background: var(--elicit-rule);
+  color: var(--text-secondary);
+  text-align: start;
+  counter-increment: elicit-row;
+}
+:root[data-steps] .elicit-pill > :is(i, svg, img, :empty) {
+  flex: none;
+  order: -1;
+  max-height: 40px;
+}
+:root[data-steps] .elicit-pill > :empty:not([class]) {
+  width: 60px;
+  margin: 0 !important;
+}
+:root[data-steps] .elicit-pill[aria-pressed="true"] {
+  background: var(--elicit-rule);
+  color: var(--text-primary);
+}
+:root[data-steps] .elicit-pill:first-child,
+:root[data-steps] .sr-only:first-child + .elicit-pill,
+:root[data-steps] .elicit-pill[hidden]:first-child + .elicit-pill,
+:root[data-steps] .sr-only:first-child + .elicit-pill[hidden] + .elicit-pill,
+:root[data-steps][data-no-design-system]
+  form.elicit:is(
+    [data-source="drifting-trinket-slides"],
+    [data-source="drifting-trinket-design"]
+  )
+  .elicit-pill:is(
+    [data-design-system],
+    [data-value="Use my design system"]
+  ):first-child
+  + .elicit-pill,
+:root[data-steps] .elicit-pill:focus-visible + .elicit-pill {
+  --elicit-rule: none;
+}
+form.elicit #elicit-place {
+  position: absolute !important;
+}
+:root[data-steps] .elicit-pill:focus-visible {
+  background: var(--alpha-1);
+  color: var(--text-primary);
+}
+@media (hover: hover) {
+  :root[data-steps] .elicit-pill:hover {
+    background: var(--alpha-1);
+    color: var(--text-primary);
+  }
+  :root[data-steps] .elicit-pill:hover + .elicit-pill {
+    --elicit-rule: none;
+  }
+  :root[data-steps]
+    .elicit-pager
+    > button:enabled:not([aria-disabled="true"]):hover {
+    background: var(--fill-ghost-hover);
+  }
+  :root[data-steps]
+    .elicit-pager
+    > button:hover:not([data-hushed])
+    > .elicit-tip {
+    display: block;
+  }
+}
+:root[data-steps] .elicit-pill::before {
+  content: counter(elicit-row);
+  content: counter(elicit-row) / "";
+  flex: none;
+  order: -2;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--alpha-1);
+  color: var(--text-secondary);
+}
+:root[data-steps] .elicit-pill[aria-pressed="true"]::before {
+  background: var(--fill-accent);
+  color: var(--on-accent);
+}
+:root[data-steps] [data-multi="true"] > .elicit-pill::before {
+  content: "";
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  margin: 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: 5px;
+  background: var(--fill-field);
+}
+:root[data-steps] [data-multi="true"] > [aria-pressed="true"]::before {
+  border-color: var(--fill-accent);
+  background: var(--fill-accent);
+}
+:root[data-steps] .elicit-pill[aria-pressed="true"]::after {
+  content: "";
+  flex: none;
+  width: 9px;
+  height: 5px;
+  margin-inline: auto 8px;
+  border: solid var(--text-accent);
+  border-width: 0 0 1.5px 1.5px;
+  transform: translate(0, -1.5px) rotate(-45deg);
+}
+:root[data-steps] [data-multi="true"] > [aria-pressed="true"]::after {
+  position: absolute;
+  inset-inline-start: 20px;
+  width: 8px;
+  height: 4px;
+  margin: 0;
+  border-color: var(--on-accent);
+}
+@media (pointer: coarse), (hover: none) {
+  :root[data-steps] [data-multi="false"] > .elicit-pill::before {
+    display: none;
+  }
+  :root[data-steps] .elicit-pager > button::after {
+    content: "";
+    position: absolute;
+    inset: -10px -4px;
+  }
+  :root[data-steps] .elicit-pager {
+    gap: 10px;
+  }
+  :root[data-steps] .elicit-pager ~ .elicit-body .elicit-question {
+    padding-inline-end: 172px;
+  }
+  :root[data-steps] [data-multi="false"] ~ .elicit-other {
+    margin-inline-start: 10px;
+  }
+}
+@media (max-width: 420px) {
+  :root[data-steps] .elicit-pager {
+    position: static;
+    justify-content: flex-end;
+    padding: 10px 12px 0;
+  }
+  :root[data-steps] .elicit-pager ~ .elicit-body .elicit-question {
+    padding-inline-end: 10px;
+  }
+  :root[data-steps] .elicit-pager ~ .elicit-body > .elicit-group {
+    padding-top: 4px;
+  }
+}
+@media (forced-colors: active) {
+  :root[data-steps] .elicit-pill[aria-pressed="true"],
+  :root[data-steps] .elicit-pill[aria-pressed="true"]::before {
+    forced-color-adjust: auto;
+  }
+  :root[data-steps] .elicit-pill[aria-pressed="true"]::after {
+    border-color: currentColor;
+  }
+}
+:root[data-steps] .elicit-card > i {
+  height: 40px;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 8.5px 27.5px,
+      var(--elicit-dot) 2.2px,
+      transparent 2.7px
+    ),
+    radial-gradient(
+      circle at 15.5px 27.5px,
+      var(--elicit-dot) 2.2px,
+      transparent 2.7px
+    ),
+    linear-gradient(var(--elicit-dot) 0 0) 8.5px 25px / 7px 5px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--elicit-ink) 45%, transparent) 0 0)
+      6px 17px / 16px 1.5px no-repeat;
+  background-color: var(--g, var(--surface-1));
+}
+:root[data-steps] .elicit-card > i::before {
+  top: 9px;
+  left: 6px;
+  width: 22px;
+  height: 3.5px;
+  border-radius: 2px;
+}
+:root[data-steps] .elicit-card > i::after {
+  top: 7.5px;
+  right: 5.5px;
+  width: 21px;
+  height: 24px;
+  border-radius: 3px;
+  background-image: radial-gradient(
+    circle,
+    var(--elicit-dot) 4.6px,
+    transparent 5.1px
+  );
+}
+:root[data-steps] .elicit-other {
+  width: auto;
+  margin-block: 0 4px;
+  margin-inline: 48px 10px;
+}
+:root[data-steps]
+  .elicit-group
+  > :not(.elicit-question, .elicit-pills, .elicit-other, .sr-only) {
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  margin-inline: 10px;
+}
+:root[data-steps] .elicit-body > :not(.elicit-group, .elicit-summary) {
+  margin: 0 !important;
+  padding: 0 16px 10px;
+}
 form.elicit .elicit-other {
-  height: calc(var(--font-text-sm-size, 14px) * 32 / 14);
-  padding: 0 12px;
+  min-height: calc(var(--font-text-sm-size, 14px) * 32 / 14);
+  max-height: calc(var(--font-text-sm-size, 14px) * 120 / 14 + 12px);
+  max-height: calc(6lh + 12px);
+  padding: 5px 12px;
+  field-sizing: content;
+  resize: none;
+  overflow-y: auto;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--fill-field);
@@ -1416,7 +1976,8 @@ form.elicit .elicit-files {
   align-items: flex-start;
   gap: 12px;
 }
-:root[data-host-platform="mobile"] form.elicit .elicit-files {
+:root[data-host-platform="mobile"] form.elicit .elicit-files,
+:root[data-host-no-files] form.elicit .elicit-files {
   display: none !important;
 }
 form.elicit .elicit-dropzone {
@@ -1543,7 +2104,12 @@ form.elicit .elicit-submit:active {
   transform: scale(0.96);
 }
 @media (pointer: coarse), (hover: none) {
-  form.elicit .elicit-other,
+  form.elicit .elicit-other {
+    min-height: calc(var(--font-text-sm-size, 14px) * 40 / 14);
+    max-height: calc(var(--font-text-sm-size, 14px) * 120 / 14 + 20px);
+    max-height: calc(6lh + 20px);
+    padding-block: 9px;
+  }
   form.elicit .elicit-date {
     height: calc(var(--font-text-sm-size, 14px) * 40 / 14);
   }
@@ -1563,6 +2129,7 @@ form.elicit .elicit-skip:active {
   background: var(--fill-ghost-hover);
 }
 form.elicit .elicit-submit {
+  order: 1;
   margin-inline-start: auto;
   background: var(--fill-primary);
   color: var(--on-primary);
@@ -1574,6 +2141,11 @@ form.elicit .elicit-submit:hover {
 }
 form.elicit .elicit-submit:hover:active {
   transform: scale(0.96);
+}
+form.elicit .elicit-skip[aria-disabled="true"],
+form.elicit .elicit-submit[aria-disabled="true"] {
+  opacity: 0.7;
+  pointer-events: none;
 }
 form.elicit .elicit-optout {
   flex-shrink: 0;
@@ -1653,7 +2225,7 @@ form.elicit.elicit-submitted {
   border-radius: 12px;
   box-shadow: none;
   padding: 16px;
-  margin: 4px;
+  margin: 4px 1px 4px 0;
 }
 form.elicit .elicit-header,
 form.elicit .elicit-footer {
@@ -1733,6 +2305,13 @@ polygon.c-purple {
   stroke: var(--shell-when-light, #534ab7) var(--shell-when-dark, #afa9ec);
   stroke: light-dark(#534ab7, #afa9ec);
 }
+:where(g.c-purple) > :where(path:not([fill], [fill] *)),
+:where(path.c-purple:not([fill], [fill] *)) {
+  fill: var(--shell-when-light, #eeedfe) var(--shell-when-dark, #3c3489);
+  fill: light-dark(#eeedfe, #3c3489);
+  stroke: var(--shell-when-light, #534ab7) var(--shell-when-dark, #afa9ec);
+  stroke: light-dark(#534ab7, #afa9ec);
+}
 .c-purple > .th,
 .c-purple > .t {
   fill: var(--shell-when-light, #3c3489) var(--shell-when-dark, #cecbf6);
@@ -1750,6 +2329,13 @@ rect.c-teal,
 ellipse.c-teal,
 circle.c-teal,
 polygon.c-teal {
+  fill: var(--shell-when-light, #e1f5ee) var(--shell-when-dark, #085041);
+  fill: light-dark(#e1f5ee, #085041);
+  stroke: var(--shell-when-light, #0f6e56) var(--shell-when-dark, #5dcaa5);
+  stroke: light-dark(#0f6e56, #5dcaa5);
+}
+:where(g.c-teal) > :where(path:not([fill], [fill] *)),
+:where(path.c-teal:not([fill], [fill] *)) {
   fill: var(--shell-when-light, #e1f5ee) var(--shell-when-dark, #085041);
   fill: light-dark(#e1f5ee, #085041);
   stroke: var(--shell-when-light, #0f6e56) var(--shell-when-dark, #5dcaa5);
@@ -1777,6 +2363,13 @@ polygon.c-coral {
   stroke: var(--shell-when-light, #993c1d) var(--shell-when-dark, #f0997b);
   stroke: light-dark(#993c1d, #f0997b);
 }
+:where(g.c-coral) > :where(path:not([fill], [fill] *)),
+:where(path.c-coral:not([fill], [fill] *)) {
+  fill: var(--shell-when-light, #faece7) var(--shell-when-dark, #712b13);
+  fill: light-dark(#faece7, #712b13);
+  stroke: var(--shell-when-light, #993c1d) var(--shell-when-dark, #f0997b);
+  stroke: light-dark(#993c1d, #f0997b);
+}
 .c-coral > .th,
 .c-coral > .t {
   fill: var(--shell-when-light, #712b13) var(--shell-when-dark, #f5c4b3);
@@ -1794,6 +2387,13 @@ rect.c-pink,
 ellipse.c-pink,
 circle.c-pink,
 polygon.c-pink {
+  fill: var(--shell-when-light, #fbeaf0) var(--shell-when-dark, #72243e);
+  fill: light-dark(#fbeaf0, #72243e);
+  stroke: var(--shell-when-light, #993556) var(--shell-when-dark, #ed93b1);
+  stroke: light-dark(#993556, #ed93b1);
+}
+:where(g.c-pink) > :where(path:not([fill], [fill] *)),
+:where(path.c-pink:not([fill], [fill] *)) {
   fill: var(--shell-when-light, #fbeaf0) var(--shell-when-dark, #72243e);
   fill: light-dark(#fbeaf0, #72243e);
   stroke: var(--shell-when-light, #993556) var(--shell-when-dark, #ed93b1);
@@ -1821,6 +2421,13 @@ polygon.c-gray {
   stroke: var(--shell-when-light, #5f5e5a) var(--shell-when-dark, #b4b2a9);
   stroke: light-dark(#5f5e5a, #b4b2a9);
 }
+:where(g.c-gray) > :where(path:not([fill], [fill] *)),
+:where(path.c-gray:not([fill], [fill] *)) {
+  fill: var(--shell-when-light, #f1efe8) var(--shell-when-dark, #444441);
+  fill: light-dark(#f1efe8, #444441);
+  stroke: var(--shell-when-light, #5f5e5a) var(--shell-when-dark, #b4b2a9);
+  stroke: light-dark(#5f5e5a, #b4b2a9);
+}
 .c-gray > .th,
 .c-gray > .t {
   fill: var(--shell-when-light, #444441) var(--shell-when-dark, #d3d1c7);
@@ -1838,6 +2445,13 @@ rect.c-blue,
 ellipse.c-blue,
 circle.c-blue,
 polygon.c-blue {
+  fill: var(--shell-when-light, #e6f1fb) var(--shell-when-dark, #0c447c);
+  fill: light-dark(#e6f1fb, #0c447c);
+  stroke: var(--shell-when-light, #185fa5) var(--shell-when-dark, #85b7eb);
+  stroke: light-dark(#185fa5, #85b7eb);
+}
+:where(g.c-blue) > :where(path:not([fill], [fill] *)),
+:where(path.c-blue:not([fill], [fill] *)) {
   fill: var(--shell-when-light, #e6f1fb) var(--shell-when-dark, #0c447c);
   fill: light-dark(#e6f1fb, #0c447c);
   stroke: var(--shell-when-light, #185fa5) var(--shell-when-dark, #85b7eb);
@@ -1865,6 +2479,13 @@ polygon.c-green {
   stroke: var(--shell-when-light, #3b6d11) var(--shell-when-dark, #97c459);
   stroke: light-dark(#3b6d11, #97c459);
 }
+:where(g.c-green) > :where(path:not([fill], [fill] *)),
+:where(path.c-green:not([fill], [fill] *)) {
+  fill: var(--shell-when-light, #eaf3de) var(--shell-when-dark, #27500a);
+  fill: light-dark(#eaf3de, #27500a);
+  stroke: var(--shell-when-light, #3b6d11) var(--shell-when-dark, #97c459);
+  stroke: light-dark(#3b6d11, #97c459);
+}
 .c-green > .th,
 .c-green > .t {
   fill: var(--shell-when-light, #27500a) var(--shell-when-dark, #c0dd97);
@@ -1887,6 +2508,13 @@ polygon.c-amber {
   stroke: var(--shell-when-light, #854f0b) var(--shell-when-dark, #ef9f27);
   stroke: light-dark(#854f0b, #ef9f27);
 }
+:where(g.c-amber) > :where(path:not([fill], [fill] *)),
+:where(path.c-amber:not([fill], [fill] *)) {
+  fill: var(--shell-when-light, #faeeda) var(--shell-when-dark, #633806);
+  fill: light-dark(#faeeda, #633806);
+  stroke: var(--shell-when-light, #854f0b) var(--shell-when-dark, #ef9f27);
+  stroke: light-dark(#854f0b, #ef9f27);
+}
 .c-amber > .th,
 .c-amber > .t {
   fill: var(--shell-when-light, #633806) var(--shell-when-dark, #fac775);
@@ -1904,6 +2532,13 @@ rect.c-red,
 ellipse.c-red,
 circle.c-red,
 polygon.c-red {
+  fill: var(--shell-when-light, #fcebeb) var(--shell-when-dark, #791f1f);
+  fill: light-dark(#fcebeb, #791f1f);
+  stroke: var(--shell-when-light, #a32d2d) var(--shell-when-dark, #f09595);
+  stroke: light-dark(#a32d2d, #f09595);
+}
+:where(g.c-red) > :where(path:not([fill], [fill] *)),
+:where(path.c-red:not([fill], [fill] *)) {
   fill: var(--shell-when-light, #fcebeb) var(--shell-when-dark, #791f1f);
   fill: light-dark(#fcebeb, #791f1f);
   stroke: var(--shell-when-light, #a32d2d) var(--shell-when-dark, #f09595);
@@ -1936,7 +2571,7 @@ svg.classDiagram .nodeLabel,
 svg.erDiagram .nodeLabel,
 svg.classDiagram .label foreignObject div,
 svg.erDiagram .label foreignObject div {
-  font-family: var(--font-sans) !important;
+  font-family: "anthropic-sans", sans-serif !important;
   font-size: 13px !important;
   font-weight: 400 !important;
   color: var(--text-secondary) !important;
@@ -2072,8 +2707,23 @@ body {
 :where(:root[data-center-content] #vis-container) > div:where(:only-of-type) {
   margin-inline: auto;
 }
+:where(
+  :root[data-show-card-fallback]:not([data-draw-cards])
+    ui-card[fallback]:not([fallback=""], [hidden], :defined)
+) {
+  display: block;
+}
+:root[data-show-card-fallback]:not([data-draw-cards])
+  ui-card[fallback]:not([fallback=""], [hidden], :defined)
+  > * {
+  display: none;
+}
+:root[data-show-card-fallback]:not([data-draw-cards])
+  ui-card[fallback]:not([fallback=""], [hidden], :defined)::before {
+  content: attr(fallback);
+}
 #action-btns {
-  position: absolute;
+  position: fixed;
   top: min(8px, (100vh - 28px) / 2);
   right: 8px;
   z-index: 2147483647;
@@ -2086,8 +2736,18 @@ body {
   display: none;
 }
 body:hover #action-btns,
-#action-btns[data-hold-open] {
+#action-btns[data-hold-open],
+#action-btns[data-keys-focus] {
   opacity: 1;
+}
+#action-btns:has(:focus-visible) {
+  opacity: 1;
+}
+#action-btns button:focus-visible,
+#action-btns[data-keys-focus] button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: var(--focus-shadow);
 }
 @media (hover: none) and (pointer: coarse) {
   #action-btns {
@@ -2235,6 +2895,11 @@ body:hover #action-btns,
   top: 0;
   left: 0;
 }
+#vis-container ~ #elicit-said {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
 #vis-container ~ #larger-btns #larger-zoom {
   position: fixed !important;
   margin: 0;
@@ -2305,6 +2970,7 @@ body:hover #action-btns,
 }
 :root[data-keep-menu-clear] #action-btns:hover > #more-btn,
 :root[data-keep-menu-clear] #action-btns[data-hold-open] > #more-btn,
+:root[data-keep-menu-clear] #action-btns[data-keys-focus] > #more-btn,
 :root[data-keep-menu-clear] #action-btns > #more-btn:focus-visible {
   background: var(--surface-0);
   opacity: 1;
@@ -2315,6 +2981,8 @@ body:hover #action-btns,
   filter: drop-shadow(0 0 1px var(--surface-0));
 }
 #more-popover {
+  all: revert;
+  box-sizing: border-box;
   position: absolute;
   top: calc(100% + 4px);
   right: 0;
@@ -2337,17 +3005,19 @@ body:hover #action-btns,
     opacity 0.15s ease,
     transform 0.15s ease,
     visibility 0s linear 0.15s;
+  transition-property: opacity, transform, visibility !important;
 }
 #more-btn:hover ~ #more-popover,
 #more-popover:hover,
-#action-btns[data-hold-open] #more-popover {
+#action-btns[data-hold-open] #more-popover,
+#action-btns[data-keys-open] #more-popover {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   transition:
     opacity 0.15s ease,
-    transform 0.15s ease,
-    visibility 0s;
+    transform 0.15s ease;
+  transition-property: opacity, transform !important;
 }
 .more-item {
   display: flex;
@@ -2365,10 +3035,14 @@ body:hover #action-btns,
   transition: background 0.1s ease;
   white-space: nowrap;
 }
+#more-popover .more-item {
+  transition-property: background !important;
+}
 .more-item[hidden] {
   display: none;
 }
-.more-item:hover {
+.more-item:hover,
+#action-btns[data-keys-focus] .more-item:focus {
   background: var(--surface-1);
   color: var(--text-primary);
 }
@@ -2472,6 +3146,22 @@ body:hover #action-btns,
   .more-item[aria-busy="true"] .more-item-icon::after {
     animation: none;
   }
+}
+:root[data-reduce-motion] *,
+:root[data-reduce-motion] *::before,
+:root[data-reduce-motion] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-timing-function: step-start !important;
+}
+:root[data-reduce-motion] #vis-container.scripts-loading::before {
+  content: none;
+}
+:root[data-reduce-motion]
+  #action-btns:not([data-hold-open]):not([data-keys-open])
+  #more-btn:not(:hover)
+  ~ #more-popover:not(:hover) {
+  transition-delay: 0.15s;
 }
 #vis-container ~ #not-sent {
   all: revert;
@@ -2642,8 +3332,8 @@ body[data-not-sent] > #vis-container ~ #not-sent {
   --color-ring-danger: light-dark(rgba(167, 61, 57, 0.5), rgba(205, 92, 88, 0.5));
   --color-ring-success: light-dark(rgba(67, 116, 38, 0.5), rgba(89, 145, 48, 0.5));
   --color-ring-warning: light-dark(rgba(128, 92, 31, 0.5), rgba(168, 120, 41, 0.5));
-  --font-sans: "anthropic-sans", sans-serif;
-  --font-mono: ui-monospace, monospace;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "anthropic-mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -2688,139 +3378,315 @@ body[data-not-sent] > #vis-container ~ #not-sent {
         <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </marker>
     </defs>
-  </svg><div id="vis-container"><h2 class="sr-only">주차별 적립 이벤트 통합 신청 모듈: 누적 예상 적립금, 주차 탭, 주차 신청 버튼, 고정 너비 스와이프 카드, 상세 팝업</h2>
-<style>
-.wk{flex:1;min-width:0;text-align:left;padding:10px 12px;border-radius:var(--radius);border:0.5px solid var(--border);background:var(--surface-2);cursor:pointer;font-size:13px;color:var(--text-secondary)}
-.wk.on{border:2px solid var(--border-accent);padding:9px 11px}
-.wk.dis{background:var(--surface-1);color:var(--text-muted);cursor:not-allowed;border-style:dashed}
-.wk.dis:hover{background:var(--surface-1)}
-.bd{display:inline-block;font-size:12px;padding:2px 8px;border-radius:var(--radius);background:var(--surface-1);color:var(--text-secondary)}
-.bd.ok{background:var(--bg-success);color:var(--text-success)}
-.bd.wn{background:var(--bg-warning);color:var(--text-warning)}
-.bd.ac{background:var(--bg-accent);color:var(--text-accent)}
-.bd.rd{background:var(--bg-danger);color:var(--text-danger)}
-#car{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab}
-#car::-webkit-scrollbar{display:none}
-.cd{flex:0 0 260px;height:262px;scroll-snap-align:start;border:0.5px solid var(--border);border-radius:12px;background:var(--surface-2);display:flex;flex-direction:column;overflow:hidden;user-select:none}
-.th{height:88px;display:flex;align-items:center;justify-content:center;position:relative;font-size:32px;flex:none}
-.th .bd{position:absolute;left:8px;top:8px}
-.cb{padding:10px 12px 12px;display:flex;flex-direction:column;flex:1;min-height:0;min-width:0}
-.t1{font-size:14px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.t2{font-size:12px;color:var(--text-secondary);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
-.dt{width:6px;height:6px;border-radius:3px;background:var(--border-strong)}
-.dt.on{background:var(--text-primary);width:16px}
-.dm.on{border:2px solid var(--border-accent);padding:0 8px}
-#btn{width:100%;height:52px;font-size:16px;font-weight:500;border-radius:var(--radius);margin-top:12px}
-</style>
-<div style="background:var(--surface-1);border-radius:12px;padding:1rem">
-  <div style="background:var(--surface-2);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:12px">
-    <div style="font-size:13px;color:var(--text-secondary)">누적 예상 적립금 <span id="rng"></span></div>
-    <div style="font-size:28px;font-weight:500" id="tot">0원</div>
-    <div style="font-size:12px;color:var(--text-muted)">신청 완료한 주차 기준 · 취소/반품 시 달라질 수 있어요.</div>
-  </div>
-  <div style="display:flex;gap:8px;margin-bottom:12px" id="wks"></div>
-  <div style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:12px;padding:1rem 1.25rem">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px">
-      <div style="font-size:16px;font-weight:500" id="wt"></div>
-      <div style="font-size:13px;color:var(--text-secondary)" id="ws"></div>
+  </svg><div id="vis-container"><h2 class="sr-only">백드롭 z-index가 수량시트보다 높아서 수량 +/- 버튼 클릭을 가로채던 버그 수정 — 백드롭을 콘텐츠 바로 위, 풋터/수량시트/팝업보다는 아래로 재배치</h2>
+
+<div style="max-width:380px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">
+
+  <div style="background:#FAFAFA;border:1px dashed #ccc;border-radius:12px;padding:10px 12px;margin-bottom:14px;">
+    <p style="font-size:10px;color:#999;margin:0 0 8px;font-weight:600;">🔧 프로토타입 케이스 선택 (실제 화면 아님) · 현재 누적 50,000원 가정</p>
+    <div style="display:flex;gap:6px;">
+      <button class="pageBtn" data-page="pdp" style="flex:1;height:30px;border-radius:7px;border:none;font-size:11.5px;font-weight:700;background:#1a1a1a;color:#fff;">상품상세</button>
+      <button class="pageBtn" data-page="complete" style="flex:1;height:30px;border-radius:7px;border:1px solid #ddd;font-size:11.5px;font-weight:700;background:#fff;color:#555;">주문완료</button>
+      <button class="pageBtn" data-page="detail" style="flex:1;height:30px;border-radius:7px;border:1px solid #ddd;font-size:11.5px;font-weight:700;background:#fff;color:#555;">주문상세</button>
     </div>
-    <button id="btn"></button>
-    <div id="msg" style="font-size:13px;color:var(--text-secondary);margin-top:8px;min-height:36px"></div>
-    <div id="car"></div>
-    <div id="dots" style="display:flex;justify-content:center;align-items:center;gap:6px;height:20px;margin-top:8px"></div>
   </div>
-  <div id="modal" style="display:none;margin-top:12px;background:rgba(0,0,0,0.45);border-radius:12px;padding:1.25rem 1rem">
-    <div style="background:var(--surface-2);border-radius:12px;border:0.5px solid var(--border);padding:1rem 1.25rem;max-width:480px;margin:0 auto">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
-        <div>
-          <div style="font-size:16px;font-weight:500" id="mt"></div>
-          <div style="font-size:13px;color:var(--text-secondary)" id="mc"></div>
+
+  <p style="font-size:10px;color:#999;margin:0 0 6px;text-align:center;">↓ 아래부터 실제 화면 ↓</p>
+
+  <div style="position:relative;border:1px solid #e5e5e5;border-radius:16px;overflow:hidden;background:#fff;height:600px;">
+
+    <div style="position:absolute;inset:0;overflow-y:auto;z-index:1;">
+      <div id="mock-pdp" class="mock">
+        <div style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;font-weight:600;color:#333;">← 나리몽 아기 무선 바스 드라이기</div>
+        <div style="width:100%;height:160px;background:#f2f2f2;"></div>
+        <div style="padding:12px 14px;">
+          <p style="font-size:11px;color:#888;margin:0 0 4px;">브랜드 <b style="color:#333;">나리몽</b></p>
+          <p style="font-size:14px;font-weight:700;color:#1a1a1a;margin:0 0 6px;">나리몽 아기 무선 바스 드라이기</p>
+          <span style="background:#FFF1E8;color:#E8703A;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:4px;">ON 키즈패스</span>
+          <p style="font-size:15px;font-weight:700;color:#1a1a1a;margin:10px 0 0;">67,150원</p>
+          <div style="height:220px;background:#fafafa;border:1px dashed #eee;border-radius:8px;margin-top:12px;"></div>
         </div>
-        <button id="mx" aria-label="닫기" style="padding:4px 8px"><i class="ti ti-x" aria-hidden="true"></i></button>
       </div>
-      <div style="margin:12px 0 4px;font-size:13px;font-weight:500">대상 상품 구매 이력</div>
-      <div id="mp"></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px">
-        <div style="background:var(--surface-1);border-radius:var(--radius);padding:10px 12px"><div style="font-size:12px;color:var(--text-secondary)">대상 구매금액</div><div style="font-weight:500" id="ma"></div></div>
-        <div style="background:var(--surface-1);border-radius:var(--radius);padding:10px 12px"><div style="font-size:12px;color:var(--text-secondary)">예상 적립금</div><div style="font-weight:500" id="mr"></div></div>
+      <div id="mock-complete" class="mock" style="display:none;">
+        <div style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;font-weight:600;text-align:center;color:#333;">주문완료</div>
+        <div style="padding:16px 14px;text-align:center;">
+          <p style="font-size:14.5px;font-weight:700;margin:0 0 4px;">주문이 완료되었습니다</p>
+          <p style="font-size:11.5px;color:#7C3AED;margin:0 0 14px;">빠르고 안전하게 보내드릴게요!</p>
+        </div>
+        <div style="padding:0 14px;text-align:left;">
+          <div style="display:flex;justify-content:space-between;font-size:11.5px;color:#555;margin-bottom:6px;"><span>주문번호</span><span>2026-11-09-050843</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:11.5px;color:#555;margin-bottom:10px;"><span>결제금액</span><b style="color:#1a1a1a;">51,030원</b></div>
+          <div style="background:#F7F5FB;border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:11.5px;color:#333;">🎁 리뷰 등록시 최대 300P 바로 적립돼요 ›</div>
+          <div style="height:220px;background:#fafafa;border:1px dashed #eee;border-radius:8px;"></div>
+        </div>
       </div>
-      <div style="font-size:13px;color:var(--text-secondary);margin-top:10px" id="mg"></div>
+      <div id="mock-detail" class="mock" style="display:none;">
+        <div style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;font-weight:600;text-align:center;color:#333;">주문상세내역</div>
+        <div style="padding:10px 14px;">
+          <p style="font-size:11px;color:#999;margin:0 0 8px;">주문번호 2026-10-31-052887</p>
+          <div style="display:flex;gap:8px;padding:8px 0;border-bottom:1px solid #f2f2f2;">
+            <div style="width:40px;height:40px;background:#f2f2f2;border-radius:6px;flex-shrink:0;"></div>
+            <div style="font-size:11.5px;color:#333;"><span style="background:#eee;color:#666;font-size:9.5px;padding:1px 5px;border-radius:3px;">배송완료</span>
+              <p style="margin:3px 0 0;">굽지않고 먹는 순살 오징어 2-3미</p><p style="margin:2px 0 0;font-weight:700;">28,900원</p></div>
+          </div>
+          <div style="display:flex;gap:8px;padding:8px 0;">
+            <div style="width:40px;height:40px;background:#f2f2f2;border-radius:6px;flex-shrink:0;"></div>
+            <div style="font-size:11.5px;color:#333;"><span style="background:#eee;color:#666;font-size:9.5px;padding:1px 5px;border-radius:3px;">배송완료</span>
+              <p style="margin:3px 0 0;">[희귀품종] 핫 엔부사과 피치애플</p><p style="margin:2px 0 0;font-weight:700;">18,900원</p></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;color:#e8552f;margin-top:10px;"><span>총 결제금액</span><span>37,860원</span></div>
+          <div style="height:200px;background:#fafafa;border:1px dashed #eee;border-radius:8px;margin-top:10px;"></div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12px;color:var(--text-muted)">
-    <span>샘플 시점</span>
-    <button class="dm" data-c="1" style="padding:2px 10px;font-size:12px">1주차</button>
-    <button class="dm" data-c="2" style="padding:2px 10px;font-size:12px">2주차</button>
-    <button class="dm" data-c="3" style="padding:2px 10px;font-size:12px">3주차</button>
+
+    <!-- ★ z-index: 2 (콘텐츠 바로 위, 풋터/수량시트/팝업보다는 아래) -->
+    <div id="backdrop" style="position:absolute;inset:0;z-index:2;pointer-events:none;"></div>
+
+    <!-- ★ z-index: 3 -->
+    <div id="pdpFooter" style="display:none;position:absolute;left:0;right:0;bottom:0;padding:8px 10px;background:#fff;border-top:1px solid #eee;z-index:3;">
+      <div style="display:flex;gap:6px;">
+        <button style="flex:1;height:42px;border:1.5px solid #6D28D9;border-radius:9px;background:#fff;color:#6D28D9;font-size:12.5px;font-weight:700;">장바구니</button>
+        <button style="flex:1;height:42px;border:none;border-radius:9px;background:#6D28D9;color:#fff;font-size:12.5px;font-weight:700;">원클릭결제</button>
+        <button id="buyNowBtn" style="flex:1;height:42px;border:none;border-radius:9px;background:#4C1D95;color:#fff;font-size:12.5px;font-weight:700;">바로구매</button>
+      </div>
+    </div>
+
+    <!-- ★ z-index: 6 -->
+    <button id="toggleBtn" style="display:none;position:absolute;right:12px;width:40px;height:40px;border-radius:50%;background:#6D28D9;border:none;box-shadow:0 2px 10px rgba(109,40,217,0.35);align-items:center;justify-content:center;z-index:6;transition:bottom 0.2s ease;">
+      <i class="ti ti-coin" style="font-size:18px;color:#fff;" aria-hidden="true"></i>
+    </button>
+
+    <!-- ★ z-index: 4 -->
+    <div id="qtySheet" style="display:none;position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #eee;border-radius:16px 16px 0 0;padding:10px 14px 14px;box-shadow:0 -8px 24px rgba(0,0,0,0.15);z-index:4;">
+      <div style="width:34px;height:4px;background:#ddd;border-radius:3px;margin:0 auto 10px;"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;border:1px solid #eee;border-radius:8px;padding:10px 12px;margin-bottom:8px;font-size:12.5px;color:#333;">
+        <span>색상 선택</span><i class="ti ti-chevron-down" style="font-size:14px;" aria-hidden="true"></i>
+      </div>
+      <div style="border:1px solid #f0f0f0;border-radius:8px;padding:10px 12px;margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <span style="font-size:12.5px;color:#333;">옐로우</span><i class="ti ti-x" style="font-size:14px;color:#999;" aria-hidden="true"></i>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <button id="qtyMinus" style="width:26px;height:26px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:14px;">−</button>
+            <span id="qtyVal" style="font-size:13px;font-weight:700;width:14px;text-align:center;">1</span>
+            <button id="qtyPlus" style="width:26px;height:26px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:14px;">+</button>
+          </div>
+          <span id="qtyPrice" style="font-size:14.5px;font-weight:700;">67,150원</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:#999;padding-top:6px;border-top:1px solid #f0f0f0;margin-bottom:2px;">
+        <span>무료배송(지역별 상이)</span><span>총 <b id="qtyTotal" style="color:#333;">67,150원</b></span>
+      </div>
+      <div style="text-align:right;font-size:14px;font-weight:700;color:#e8552f;margin-bottom:10px;">예상 결제가 <span id="qtyFinal">63,800</span>원</div>
+      <div style="display:flex;gap:6px;">
+        <button style="flex:1;height:42px;border:1.5px solid #6D28D9;border-radius:9px;background:#fff;color:#6D28D9;font-size:12.5px;font-weight:700;">장바구니</button>
+        <button style="flex:1;height:42px;border:none;border-radius:9px;background:#6D28D9;color:#fff;font-size:12.5px;font-weight:700;">원클릭결제</button>
+        <button style="flex:1;height:42px;border:none;border-radius:9px;background:#4C1D95;color:#fff;font-size:12.5px;font-weight:700;">바로구매</button>
+      </div>
+    </div>
+
+    <!-- ★ z-index: 5 -->
+    <div id="sheet" style="position:absolute;left:14px;right:14px;bottom:0;background:#fff;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,0.2);padding:10px 12px 12px;z-index:5;opacity:0;transform:translateY(8px) scale(0.98);pointer-events:none;transition:opacity 0.25s ease, transform 0.25s ease, bottom 0.2s ease;">
+      <button id="closeBtn" style="position:absolute;top:8px;right:10px;width:24px;height:24px;background:none;border:none;color:#8B5CF6;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;">
+        <i class="ti ti-x" style="font-size:15px;" aria-hidden="true"></i>
+      </button>
+
+      <div style="position:relative;margin-bottom:8px;">
+        <div id="tabRow" style="display:flex;gap:6px;overflow-x:auto;padding-right:24px;"></div>
+        <div style="position:absolute;top:0;right:0;width:22px;height:100%;background:linear-gradient(to right, rgba(255,255,255,0), #fff);pointer-events:none;"></div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;background:#F7F5FB;border-radius:8px;padding:6px 10px;margin-bottom:8px;">
+        <p id="campaignCondition" style="font-size:10.5px;color:#555;margin:0;"></p>
+        <span style="display:inline-flex;align-items:center;gap:3px;background:#EDE4FF;color:#6D28D9;border-radius:12px;padding:2px 8px;font-size:10.5px;font-weight:700;white-space:nowrap;">
+          <i class="ti ti-coin" style="font-size:11px;" aria-hidden="true"></i><span id="rewardText"></span>
+        </span>
+      </div>
+
+      <p id="sheetHeadline" style="font-size:12px;font-weight:700;color:#6D28D9;margin:0 0 8px;"></p>
+
+      <div id="amtRow" style="margin-bottom:6px;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:9.5px;color:#999;width:26px;">금액</span>
+          <div style="position:relative;flex:1;height:6px;background:#E9DDFA;border-radius:3px;overflow:hidden;">
+            <div id="amtDark" style="position:absolute;left:0;top:0;height:100%;background:#6D28D9;"></div>
+            <div id="amtLight" style="position:absolute;top:0;height:100%;background:#6D28D9;opacity:0.35;"></div>
+            <div id="amtTick" style="position:absolute;top:-1px;width:2px;height:8px;background:#fff;"></div>
+          </div>
+        </div>
+        <p id="amtLabel" style="font-size:9.5px;color:#8B5CF6;margin:3px 0 0;text-align:right;"></p>
+      </div>
+      <div id="cntRow" style="margin-bottom:8px;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:9.5px;color:#999;width:26px;">횟수</span>
+          <div style="position:relative;flex:1;height:6px;background:#E9DDFA;border-radius:3px;overflow:hidden;">
+            <div id="cntFill" style="position:absolute;left:0;top:0;height:100%;background:#6D28D9;"></div>
+          </div>
+        </div>
+        <p id="cntLabel" style="font-size:9.5px;color:#8B5CF6;margin:3px 0 0;text-align:right;"></p>
+      </div>
+
+      <button id="sheetCta" style="width:100%;height:38px;border:none;border-radius:8px;font-size:12.5px;font-weight:700;background:#6D28D9;color:#fff;margin-bottom:6px;"></button>
+      <div style="text-align:center;">
+        <span id="dismissTodayBtn" style="font-size:10px;color:#aaa;text-decoration:underline;cursor:pointer;">오늘 그만보기</span>
+      </div>
+    </div>
+
   </div>
 </div>
+
 <script>
-const W=[
-{n:1,r:'11/2 ~ 11/8',ev:[
- {t:'브랜드A 구매 적립',c:'브랜드A 5만원 이상 · 5% (최대 5천원)',i:'sparkles',min:50000,rate:.05,cap:5000,p:[['11/3','브랜드A 세럼',32000],['11/5','브랜드A 크림',28000]]},
- {t:'생필품 장바구니 적립',c:'생필품 3만원 이상 · 3% (최대 3천원)',i:'shopping-cart',min:30000,rate:.03,cap:3000,p:[['11/4','세탁세제',18000]]},
- {t:'건강식품 첫 구매 적립',c:'건강식품 1만원 이상 첫 구매 · 1천원 적립',i:'heart',min:10000,fix:1000,p:[['11/6','비타민',24000]]}]},
-{n:2,r:'11/9 ~ 11/15',ev:[
- {t:'브랜드B 구매 적립',c:'브랜드B 7만원 이상 · 7% (최대 1만원)',i:'package',min:70000,rate:.07,cap:10000,p:[['11/10','브랜드B 패딩',89000]]}]},
-{n:3,r:'11/16 ~ 11/22',ev:[
- {t:'가전 구매 적립',c:'가전 20만원 이상 · 3% (최대 2만원)',i:'plug',min:200000,rate:.03,cap:20000,p:[['11/17','청소기',240000]]},
- {t:'뷰티 구매 적립',c:'뷰티 5만원 이상 · 5% (최대 5천원)',i:'sparkles',min:50000,rate:.05,cap:5000,p:[['11/18','립 틴트',22000]]}]}];
-const PRESET={1:{1:false,2:false,3:false},2:{1:true,2:false,3:false},3:{1:true,2:false,3:false}};
-const TH=[['var(--bg-accent)','var(--text-accent)'],['var(--bg-success)','var(--text-success)'],['var(--bg-warning)','var(--text-warning)']];
-let cur=1,sel=1,applied=Object.assign({},PRESET[1]),step=0;
-const f=n=>Math.round(n).toLocaleString('ko-KR')+'원';
-function pur(w,e){return w.n>cur?[]:e.p}
-function calc(w,e){const p=pur(w,e),s=p.reduce((a,x)=>a+x[2],0),ok=s>=e.min;return{p,s,ok,rw:ok?(e.fix?e.fix:Math.min(Math.floor(s*e.rate),e.cap)):0}}
-function wsum(w){return w.ev.reduce((a,e)=>a+calc(w,e).rw,0)}
-function st(w){return w.n>cur?['오픈 예정','']:applied[w.n]?['신청 완료','ok']:w.n===cur?['신청 가능','ac']:['신청 불가','rd']}
-function layout(){
- const w=W[sel-1],n=w.ev.length,cw=car.clientWidth;if(!cw)return;
- const px=cw<420?Math.round(cw*0.72):260;
- car.querySelectorAll('.cd').forEach(c=>{c.style.flex='0 0 '+px+'px'});
- car.style.justifyContent=n===1?'center':'flex-start';
- step=px+10;
- const pages=Math.max(1,Math.ceil((car.scrollWidth-cw-2)/step)+1);
- dots.innerHTML=pages>1?Array.from({length:pages},(_,i)=>`<span class="dt ${i===0?'on':''}"></span>`).join(''):'';
+const AMT_T=200000, CNT_T=2, BASE_AMT=50000, BASE_CNT=1;
+const UNIT_PRICE=67150, ORDER_AMT_COMPLETE=51030;
+const QTY_SHEET_H=272, FOOTER_H=58;
+let page='pdp', pdpQty=1, qtySheetOpen=false, activeTab=0;
+let visible=false, suppressedToday=false, hideTimer=null;
+function fmt(n){return Math.round(n).toLocaleString();}
+
+const campaigns=[
+  {name:'컴온 기본 적립', compound:false, condition:'대상상품 20만원 이상 구매 시', reward:'2만원 적립'},
+  {name:'컴온 더블업 적립', compound:true, condition:'대상상품 2건·20만원 이상 구매 시', reward:'2만원 적립'}
+];
+
+function renderTabs(){
+  const row=document.getElementById('tabRow');
+  row.innerHTML='';
+  campaigns.forEach((c,i)=>{
+    const btn=document.createElement('button');
+    btn.textContent=c.name;
+    btn.style.cssText='flex-shrink:0;border:none;font-size:10.5px;font-weight:700;padding:5px 10px;border-radius:14px;'+(i===activeTab?'background:#6D28D9;color:#fff;':'background:#F3F0FA;color:#8B5CF6;');
+    btn.addEventListener('click',()=>{ activeTab=i; renderTabs(); renderContent(); });
+    row.appendChild(btn);
+  });
 }
-function render(){
- let t=0;W.forEach(w=>{if(w.n<=cur&&applied[w.n])t+=wsum(w)});
- tot.textContent=f(t);rng.textContent='(1주 ~ '+cur+'주차)';
- wks.innerHTML=W.map(w=>{const s=st(w),d=w.n>cur;return `<button class="wk ${w.n===sel?'on':''} ${d?'dis':''}" data-w="${w.n}" ${d?'disabled aria-disabled="true"':''}><div style="font-weight:500;${d?'':'color:var(--text-primary)'}">${w.n}주차</div><div style="font-size:12px">${w.r}</div><div style="margin-top:6px"><span class="bd ${s[1]}">${s[0]}</span></div></button>`}).join('');
- const w=W[sel-1];
- wt.textContent=w.n+'주차 적립 이벤트';
- ws.textContent=w.r;
- btn.style.background='var(--surface-1)';btn.style.color='var(--text-muted)';btn.style.border='0.5px solid var(--border)';
- if(applied[w.n]){btn.innerHTML='<i class="ti ti-check" aria-hidden="true"></i> 신청 완료';btn.style.background='var(--bg-success)';btn.style.color='var(--text-success)';btn.style.border='0.5px solid var(--border-success)'}
- else if(w.n===cur){btn.innerHTML='이번 주 적립 신청하기';btn.style.background='var(--fill-accent)';btn.style.color='var(--on-accent)';btn.style.border='none'}
- else btn.textContent='신청 기간 종료';
- car.innerHTML=w.ev.map((e,i)=>{const c=calc(w,e),k=TH[i%3];
-  const off=!applied[w.n]&&w.n<cur;
-  const rw=off?'대상 아님':(applied[w.n]?'':'신청 시 ')+f(c.rw);
-  return `<div class="cd"><div class="th" style="background:${k[0]};color:${k[1]}"><i class="ti ti-${e.i}" aria-hidden="true"></i><span class="bd ${c.ok?'ok':'wn'}">${c.ok?'조건 달성':'조건 미달'}</span></div><div class="cb"><div class="t1">${e.t}</div><div class="t2">${e.c}</div><div style="flex:1"></div><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px"><span style="font-size:12px;color:var(--text-secondary)">예상 적립</span><span style="font-weight:500;${off?'color:var(--text-muted)':''}">${rw}</span></div><button data-e="${i}" style="width:100%;height:32px;font-size:13px">상세 보기</button></div></div>`}).join('');
- car.scrollLeft=0;
- layout();
- document.querySelectorAll('.dm').forEach(b=>b.classList.toggle('on',+b.dataset.c===cur));
+
+function barHTML(curAmt, prevAmt, curCnt, prevCnt, projected, compound){
+  const curPct=Math.min(100,curAmt/AMT_T*100);
+  const prevPct=prevAmt!=null?Math.min(100,prevAmt/AMT_T*100):0;
+  if(projected){
+    document.getElementById('amtDark').style.width=prevPct+'%';
+    document.getElementById('amtLight').style.left=prevPct+'%';
+    document.getElementById('amtLight').style.width=Math.max(0,curPct-prevPct)+'%';
+    document.getElementById('amtTick').style.display='none';
+  } else {
+    document.getElementById('amtLight').style.width='0%';
+    if(prevAmt!=null && prevAmt!==curAmt){
+      document.getElementById('amtTick').style.display='block';
+      document.getElementById('amtTick').style.left=prevPct+'%';
+      document.getElementById('amtDark').style.width=curPct+'%';
+    } else {
+      document.getElementById('amtTick').style.display='none';
+      document.getElementById('amtDark').style.width=curPct+'%';
+    }
+  }
+  const remain=Math.max(0,AMT_T-curAmt);
+  document.getElementById('amtLabel').textContent=(prevAmt!=null&&projected?fmt(prevAmt)+'원 → 구매시 '+fmt(curAmt)+'원(예상)':fmt(curAmt)+'원')+' / '+fmt(AMT_T)+'원';
+  const cntPct=Math.min(100,curCnt/CNT_T*100);
+  document.getElementById('cntFill').style.width=cntPct+'%';
+  document.getElementById('cntLabel').textContent=(prevCnt!=null&&projected?prevCnt+'건 → 구매시 '+curCnt+'건(예상)':curCnt+'건')+' / '+CNT_T+'건'+(curCnt>=CNT_T?' ✓달성':'');
+  document.getElementById('cntRow').style.display=compound?'block':'none';
+  return remain;
 }
-car.addEventListener('scroll',()=>{if(!step)return;const i=Math.round(car.scrollLeft/step);dots.querySelectorAll('.dt').forEach((d,k)=>d.classList.toggle('on',k===i))});
-if(window.ResizeObserver)new ResizeObserver(()=>layout()).observe(car);
-let dr=false,sx=0,sl=0,mv=0;
-car.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;dr=true;sx=e.clientX;sl=car.scrollLeft;mv=0;car.style.scrollSnapType='none';car.style.cursor='grabbing'});
-window.addEventListener('pointermove',e=>{if(!dr)return;mv=Math.abs(e.clientX-sx);car.scrollLeft=sl-(e.clientX-sx)});
-window.addEventListener('pointerup',()=>{if(!dr)return;dr=false;car.style.scrollSnapType='x mandatory';car.style.cursor='grab'});
-wks.onclick=x=>{const b=x.target.closest('.wk');if(b&&!b.disabled){sel=+b.dataset.w;msg.textContent='';render()}};
-btn.onclick=()=>{const w=W[sel-1];
- if(applied[w.n])msg.textContent='이미 신청했어요. 이 주차의 적립 이벤트에 모두 적용돼요.';
- else if(w.n===cur){applied[w.n]=true;msg.textContent='신청했어요. 이 주차 적립 이벤트에 모두 적용돼요. 조건은 기간 내 구매로 충족할 수 있어요.';render()}
- else msg.textContent='지난 주차는 신청할 수 없어요.'};
-car.onclick=x=>{const b=x.target.closest('button[data-e]');if(!b||mv>5)return;
- const w=W[sel-1],e=w.ev[+b.dataset.e],c=calc(w,e);
- const off=!applied[w.n]&&w.n<cur;
- mt.textContent=e.t;mc.textContent=e.c;
- mp.innerHTML=c.p.length?c.p.map(r=>`<div style="display:flex;justify-content:space-between;font-size:13px;padding:6px 0;border-top:0.5px solid var(--border)"><span>${r[0]} · ${r[1]}</span><span>${f(r[2])}</span></div>`).join(''):'<div style="font-size:13px;color:var(--text-secondary);padding:6px 0">구매 이력이 없어요.</div>';
- ma.textContent=f(c.s);mr.textContent=off?'-':f(c.rw);
- mg.textContent=off?'신청하지 않은 주차라 적립 대상이 아니에요.':c.ok?'조건을 달성했어요.':'조건까지 '+f(e.min-c.s)+' 더 구매하면 적립돼요.';
- modal.style.display='block';modal.scrollIntoView({block:'nearest'})};
-mx.onclick=()=>{modal.style.display='none'};
-document.querySelectorAll('.dm').forEach(b=>b.onclick=()=>{cur=+b.dataset.c;sel=cur;applied=Object.assign({},PRESET[cur]);modal.style.display='none';msg.textContent='';render()});
-render();
+
+function renderContent(){
+  const c=campaigns[activeTab];
+  document.getElementById('campaignCondition').textContent=c.condition;
+  document.getElementById('rewardText').textContent=c.reward;
+  const cta=document.getElementById('sheetCta');
+  const headline=document.getElementById('sheetHeadline');
+
+  if(page==='pdp'){
+    const curAmt=BASE_AMT+UNIT_PRICE*pdpQty, curCnt=BASE_CNT+pdpQty;
+    const remain=barHTML(curAmt,BASE_AMT,curCnt,BASE_CNT,true,c.compound);
+    if(qtySheetOpen){ headline.textContent = remain>0 ? '이대로 구매 시 '+fmt(remain)+'원 남아요' : '이대로 구매 시 조건 달성!'; }
+    else { headline.textContent = remain>0 ? '이 상품 구매하면 조건까지 '+fmt(remain)+'원 남아요' : '구매하면 조건 달성 예상!'; }
+    cta.style.display='none';
+  } else if(page==='complete'){
+    const curAmt=BASE_AMT+ORDER_AMT_COMPLETE, curCnt=BASE_CNT+1;
+    const remain=barHTML(curAmt,BASE_AMT,curCnt,BASE_CNT,false,c.compound);
+    headline.textContent='이번 주문으로 '+fmt(ORDER_AMT_COMPLETE)+'원만큼 다가갔어요! '+(remain>0?fmt(remain)+'원 더 구매하면 조건 달성':'조건 달성!');
+    cta.style.display='block'; cta.textContent='대상상품 더 보기';
+  } else {
+    const remain=barHTML(BASE_AMT,null,BASE_CNT,null,false,c.compound);
+    headline.textContent= remain>0 ? '조건까지 '+fmt(remain)+'원 남았어요' : '조건 달성!';
+    cta.style.display='block'; cta.textContent='대상상품 더 보기';
+  }
+}
+
+function popupBottom(){ if(page!=='pdp') return '20px'; return qtySheetOpen ? QTY_SHEET_H+'px' : '0px'; }
+function toggleBottom(){ if(page!=='pdp') return '10px'; return qtySheetOpen ? (QTY_SHEET_H+8)+'px' : (FOOTER_H+8)+'px'; }
+function updateBackdrop(){ document.getElementById('backdrop').style.pointerEvents = (qtySheetOpen || visible) ? 'auto' : 'none'; }
+
+function showPopup(isAuto){
+  if(suppressedToday) return;
+  const popup=document.getElementById('sheet');
+  popup.style.bottom=popupBottom();
+  popup.style.opacity='1'; popup.style.transform='translateY(0) scale(1)'; popup.style.pointerEvents='auto';
+  visible=true;
+  document.getElementById('toggleBtn').style.display='none';
+  updateBackdrop();
+  clearTimeout(hideTimer);
+  if(isAuto) hideTimer=setTimeout(()=>hidePopup(true),3000);
+}
+function hidePopup(showToggle){
+  clearTimeout(hideTimer);
+  const popup=document.getElementById('sheet');
+  popup.style.opacity='0'; popup.style.transform='translateY(8px) scale(0.98)'; popup.style.pointerEvents='none';
+  visible=false;
+  updateBackdrop();
+  const t=document.getElementById('toggleBtn');
+  if(showToggle && !suppressedToday){ t.style.bottom=toggleBottom(); t.style.display='flex'; }
+  else { t.style.display='none'; }
+}
+function dismissToday(){ suppressedToday=true; hidePopup(false); }
+function closeQtySheetFn(){
+  qtySheetOpen=false;
+  document.getElementById('qtySheet').style.display='none';
+  if(visible) document.getElementById('sheet').style.bottom=popupBottom();
+  else if(document.getElementById('toggleBtn').style.display==='flex') document.getElementById('toggleBtn').style.bottom=toggleBottom();
+  updateBackdrop();
+}
+function enterPage(){
+  document.querySelectorAll('.mock').forEach(m=>m.style.display='none');
+  document.getElementById('mock-'+page).style.display='block';
+  document.getElementById('pdpFooter').style.display = page==='pdp' ? 'block':'none';
+  pdpQty=1; qtySheetOpen=false; activeTab=0; suppressedToday=false;
+  document.getElementById('qtySheet').style.display='none';
+  document.getElementById('toggleBtn').style.display='none';
+  renderTabs(); renderContent();
+  hidePopup(false);
+  updateBackdrop();
+  setTimeout(()=>showPopup(true),450);
+}
+document.querySelectorAll('.pageBtn').forEach(b=>b.addEventListener('click',()=>{
+  page=b.dataset.page;
+  document.querySelectorAll('.pageBtn').forEach(x=>{const a=x.dataset.page===page;x.style.background=a?'#1a1a1a':'#fff';x.style.color=a?'#fff':'#555';x.style.border=a?'none':'1px solid #ddd';});
+  enterPage();
+}));
+document.getElementById('closeBtn').addEventListener('click',()=>hidePopup(true));
+document.getElementById('toggleBtn').addEventListener('click',()=>showPopup(false));
+document.getElementById('dismissTodayBtn').addEventListener('click',dismissToday);
+document.getElementById('buyNowBtn').addEventListener('click',()=>{
+  qtySheetOpen=true;
+  document.getElementById('qtySheet').style.display='block';
+  if(visible) document.getElementById('sheet').style.bottom=popupBottom();
+  else if(document.getElementById('toggleBtn').style.display==='flex') document.getElementById('toggleBtn').style.bottom=toggleBottom();
+  updateBackdrop();
+});
+function updateQtySheet(){
+  const price=UNIT_PRICE*pdpQty;
+  document.getElementById('qtyVal').textContent=pdpQty;
+  document.getElementById('qtyPrice').textContent=fmt(price)+'원';
+  document.getElementById('qtyTotal').textContent=fmt(price)+'원';
+  document.getElementById('qtyFinal').textContent=fmt(price*0.95);
+}
+document.getElementById('qtyPlus').addEventListener('click',()=>{ pdpQty=Math.min(5,pdpQty+1); updateQtySheet(); renderContent(); showPopup(true); });
+document.getElementById('qtyMinus').addEventListener('click',()=>{ pdpQty=Math.max(1,pdpQty-1); updateQtySheet(); renderContent(); showPopup(true); });
+document.getElementById('backdrop').addEventListener('click',()=>{
+  if(visible) hidePopup(true);
+  if(qtySheetOpen) closeQtySheetFn();
+});
+enterPage();
 </script></div></body></html>
